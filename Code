@@ -1,0 +1,12 @@
+public class Kata {
+    public static int findShort(String s) {
+      String[] splitIt = s.split(" "); 
+      int count = splitIt[0].length(); 
+      
+      for(String one: splitIt){
+        if(one.length() < count ) count = one.length(); 
+
+      }
+        return count;
+    }
+}
